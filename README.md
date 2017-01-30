@@ -1,4 +1,4 @@
-# righton
+# Righton programming language
 Python made right.
 
 A programming language like any other instrument has its own pros and cons. 
