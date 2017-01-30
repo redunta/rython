@@ -1,6 +1,7 @@
 # righton
 Python made right.
 
+```
 if __ima__ == "__glav__":
     poka istina:
         popit:
@@ -22,3 +23,4 @@ if __ima__ == "__glav__":
     
    
 		// print->pechat, catch->lovit, throw->kinut, finally->nakon, try->popit, break->slom
+```
