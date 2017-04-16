@@ -11,25 +11,23 @@ Rython project aims to drop all Python faults and keep best of two worlds: C-lik
 Here is an example what it could look like:
 
 ```
-if __ima__ == "__glav__":
-    poka istina:
-        popit:
-			num1 = celoe(raw_input(" Please give me a number: "));
-			num2 = celoe(raw_input(" Please give me another number: "));;
-		lovit: print 'quiting'; slom;;
-        igri = [
+if __module__ == "__main__":
+    while true:
+        try:
+		num1 = int(raw_input(" Please give me a number: "));
+		num2 = int(raw_input(" Please give me another number: "));;
+	catch: print 'quiting'; break;;
+        games = [
             ('+', lambda x,y: x + y),
             ('-', lambda x,y: x - y),
             ('*', lambda x,y: x * y),
             ('/', lambda x,y: float(x) / y),
         ];
-        pechat " ***********************************";
-        dla igra v igri:
+        print " ***********************************";
+        for game in games:
             op = func[0];
-            result = igra[1](num1, num2);
-            pechat '%d %s %d = %s' % (num1, op, num2, result);;
-        pechat " ***********************************";;
+            result = game[1](num1, num2);
+            print '%d %s %d = %s' % (num1, op, num2, result);;
+        print " ***********************************";;
     
-   
-		// print->pechat, catch->lovit, throw->kinut, finally->nakon, try->popit, break->slom
 ```
